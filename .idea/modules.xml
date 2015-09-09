@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mineCleaner.iml" filepath="$PROJECT_DIR$/mineCleaner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mineclearance/mineclearance.iml" filepath="$PROJECT_DIR$/mineclearance/mineclearance.iml" />
+    </modules>
+  </component>
+</project>

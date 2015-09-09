@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="graybg">#c884857d</color>
+    <color name="boundcolor">#ff686565</color>
+    <color name="bottombg">#64996a96</color>
+    <color name="mineface">#ff4960cd</color>
+    <!--<color name="mineface">#ff97987b</color>-->
+    <color name="minepress">#ff99f0fe</color>
+    <color name="minenaked">#ffc2cde3</color>
+    <color name="one">#ff497d98</color>
+    <color name="two">#ff75986d</color>
+    <color name="three">#ff985a53</color>
+    <color name="four">#ff0b9802</color>
+    <color name="five">#ff976798</color>
+    <color name="six">#ff98115b</color>
+    <color name="seven">#ff010498</color>
+    <color name="eight">#ff98030d</color>
+</resources>
