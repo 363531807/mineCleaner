@@ -4,4 +4,4 @@ android mineCleaner design for curriculum design
 
 #only finish in SurfaceView .
 
-#扫雷部分 仅仅使用SurefaceView ,并没有使用button实现类的效果。
+#扫雷部分 仅仅使用SurefaceView ,并没有使用button实现雷的效果。
