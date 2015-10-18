@@ -132,7 +132,6 @@ public class MineSurface extends SurfaceView implements SurfaceHolder.Callback{
             surCreate();
             setOnTouchListener(mMyOnTouchListener);
         }
-
     }
 
     @Override
