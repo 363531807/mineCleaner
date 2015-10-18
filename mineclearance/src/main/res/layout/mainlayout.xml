@@ -4,181 +4,192 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@drawable/mainbackground"
-                android:gravity="center"
+              android:gravity="center"
               >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="40sp"
-        android:textColor="@android:color/holo_purple"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="扫雷游戏"
-        android:id="@+id/textView"
-        />
-
-    <TableLayout
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:stretchColumns="2"
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
         >
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:textColor="@android:color/holo_purple"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:gravity="right"
-                android:text="用户名:"
-                android:id="@+id/username"/>
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/etmyname"
-                android:hint="请输入用户名"
-                android:layout_span="2"/>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="请输入扫雷的行数和列数:"
-                android:id="@+id/myhint"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_span="3"/>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="行数:"
-                android:gravity="right"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/rownum"/>
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:layout_span="2"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/myrownum"
-                android:hint="推荐2~16之间"
+                android:text="扫雷游戏"
+                android:id="@+id/textView"
                 />
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
+
+            <TableLayout
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="列数:"
-                android:gravity="right"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/colnum"/>
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:stretchColumns="2"
+                >
 
-            <EditText
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:gravity="right"
+                        android:text="用户名:"
+                        android:id="@+id/username"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/etmyname"
+                        android:hint="请输入用户名"
+                        android:layout_span="2"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请输入扫雷的行数和列数:"
+                        android:id="@+id/myhint"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_span="3"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="行数:"
+                        android:gravity="right"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/rownum"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:layout_span="2"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/myrownum"
+                        android:hint="推荐2~16之间"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="列数:"
+                        android:gravity="right"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/colnum"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@+id/mycolnum"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_span="2"
+                        android:hint="推荐2~12之间"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="雷的数量:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/minenum"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@+id/myminenum"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_span="2"
+                        android:hint="不得多于行数*列数"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="背景音乐:"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/backmusic"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mybackmusic"
+                        android:checked="true"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="最佳游戏时间:"
+
+                        android:id="@+id/bestscore"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/mybestscore"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:id="@+id/mycolnum"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_span="2"
-                android:hint="推荐2~12之间"
-                />
-        </TableRow>
+                android:text="开始游戏"
+                android:textSize="28sp"
+                android:textColor="@android:color/holo_red_light"
+                android:id="@+id/start"
+                android:background="@drawable/abc_btn_borderless_material"/>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:text="雷的数量:"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/minenum"/>
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:id="@+id/myminenum"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_span="2"
-                android:hint="不得多于行数*列数"/>
-        </TableRow>
+        </LinearLayout>
+    </ScrollView>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:text="背景音乐:"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/backmusic"/>
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/mybackmusic"
-                android:checked="true"/>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="最佳游戏时间:"
-
-                android:id="@+id/bestscore"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/mybestscore"
-                />
-        </TableRow>
-
-    </TableLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="开始游戏"
-        android:textSize="28sp"
-        android:textColor="@android:color/holo_red_light"
-        android:id="@+id/start"
-        android:background="@drawable/abc_btn_borderless_material"/>
 
 
 </LinearLayout>
